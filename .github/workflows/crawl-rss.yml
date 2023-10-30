@@ -1,7 +1,5 @@
 on:
-  schedule:
-    # Runs every 4h
-    - cron: '0 */4 * * *'
+  push:
   workflow_dispatch:
   
 jobs:
@@ -11,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
         with:
-          repository: minhhungit/github-action-rss-crawler
+          repository: oSoWoSo/github-action-rss-crawler
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-dotnet@v1
         with:
