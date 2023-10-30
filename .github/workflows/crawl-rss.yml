@@ -17,7 +17,7 @@ jobs:
       #- run: dotnet build DemoApp\DemoApp.sln      
       - run: dotnet run --project RssCrawler\RssCrawler.csproj
       - run: git config --local user.email "zenobit@disroot.org"
-      - run: git config --local user.name "zenobit"
+      - run: git config --local user.name "zen0bit"
       - run: git add .
       - run: git commit -m "Add changes"
       - run: git push
